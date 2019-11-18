@@ -45,25 +45,31 @@
     <ClCompile Include="Window.c">
       <Filter>Source Files\User</Filter>
     </ClCompile>
-    <ClCompile Include="NAE_Core.c">
-      <Filter>Source Files\Engine\Display</Filter>
-    </ClCompile>
-    <ClCompile Include="NAE_Init.c">
-      <Filter>Source Files\Engine\Display</Filter>
-    </ClCompile>
     <ClCompile Include="NAE_Error_Log.c">
       <Filter>Source Files\Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="NAE_Init.c">
+      <Filter>Source Files\Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="NAE_Core.c">
+      <Filter>Source Files\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="NAE_Frame_Rate.cpp">
+      <Filter>Source Files\Engine\Display</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Window.h">
       <Filter>Header Files\User</Filter>
     </ClInclude>
-    <ClInclude Include="NAE_Init.h">
-      <Filter>Header Files\Engine\Display</Filter>
-    </ClInclude>
     <ClInclude Include="NAE_Error_log.h">
       <Filter>Header Files\Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="NAE_Init.h">
+      <Filter>Header Files\Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="NAE_Frame_Rate.h">
+      <Filter>Header Files\Engine\Display</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

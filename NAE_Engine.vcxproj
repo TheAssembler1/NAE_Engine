@@ -22,11 +22,13 @@
     <ClCompile Include="NAE_Error_Log.c" />
     <ClCompile Include="NAE_Core.c" />
     <ClCompile Include="Main.c" />
+    <ClCompile Include="NAE_Frame_Rate.cpp" />
     <ClCompile Include="NAE_Init.c" />
     <ClCompile Include="Window.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NAE_Error_log.h" />
+    <ClInclude Include="NAE_Frame_Rate.h" />
     <ClInclude Include="NAE_Init.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
