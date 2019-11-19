@@ -1,3 +1,5 @@
-﻿C:\Users\noah\Documents\GitHub\NAE_Engine\NAE_Engine.vcxproj(74,5): warning MSB4011: "C:\Users\noah\Documents\GitHub\NAE_Engine\NAE_Engine.props" cannot be imported again. It was already imported at "C:\Users\noah\Documents\GitHub\NAE_Engine\NAE_Engine.vcxproj (73,5)". This is most likely a build authoring error. This subsequent import will be ignored. 
-  NAE_Init.c
-C:\Users\noah\Documents\GitHub\NAE_Engine\NAE_Init.c(5,1): error C2059: syntax error: 'if'
+﻿C:\Users\noah\Documents\GitHub\NAE_Engine\NAE_Engine.vcxproj(82,5): warning MSB4011: "C:\Users\noah\Documents\GitHub\NAE_Engine\NAE_Engine.props" cannot be imported again. It was already imported at "C:\Users\noah\Documents\GitHub\NAE_Engine\NAE_Engine.vcxproj (81,5)". This is most likely a build authoring error. This subsequent import will be ignored. 
+  Main.c
+  NAE_Core.c
+  Generating Code...
+  NAE_Engine.vcxproj -> C:\Users\noah\Documents\GitHub\NAE_Engine\Debug\NAE_Engine.exe

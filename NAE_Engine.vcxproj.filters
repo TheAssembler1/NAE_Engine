@@ -37,6 +37,18 @@
     <Filter Include="Header Files\User">
       <UniqueIdentifier>{bd6ac416-7137-4f44-8d98-0b0f75fd2ee9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Engine\Input">
+      <UniqueIdentifier>{e48047f9-7313-4e60-a62b-d6ae9acc4fd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Input">
+      <UniqueIdentifier>{126fbedf-2d60-4d08-9c5e-5208df720070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine\Game">
+      <UniqueIdentifier>{eb79f3ce-6fb5-48e9-b237-2152d897b748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Game">
+      <UniqueIdentifier>{5320f680-7f75-4c68-be73-44f1bbbd1978}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.c">
@@ -54,8 +66,17 @@
     <ClCompile Include="NAE_Core.c">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
-    <ClCompile Include="NAE_Frame_Rate.cpp">
+    <ClCompile Include="NAE_Keyboard_Input.c">
+      <Filter>Source Files\Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="NAE_Frame_Rate.c">
       <Filter>Source Files\Engine\Display</Filter>
+    </ClCompile>
+    <ClCompile Include="NAE_Window_Input.c">
+      <Filter>Source Files\Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="NAE_Object.c">
+      <Filter>Source Files\Engine\Game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -70,6 +91,15 @@
     </ClInclude>
     <ClInclude Include="NAE_Frame_Rate.h">
       <Filter>Header Files\Engine\Display</Filter>
+    </ClInclude>
+    <ClInclude Include="NAE_Keyboard_Input.h">
+      <Filter>Header Files\Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="NAE_Window_Input.h">
+      <Filter>Header Files\Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="NAE_Object.h">
+      <Filter>Header Files\Engine\Game</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

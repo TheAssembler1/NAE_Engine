@@ -22,14 +22,20 @@
     <ClCompile Include="NAE_Error_Log.c" />
     <ClCompile Include="NAE_Core.c" />
     <ClCompile Include="Main.c" />
-    <ClCompile Include="NAE_Frame_Rate.cpp" />
+    <ClCompile Include="NAE_Frame_Rate.c" />
     <ClCompile Include="NAE_Init.c" />
+    <ClCompile Include="NAE_Keyboard_Input.c" />
+    <ClCompile Include="NAE_Object.c" />
+    <ClCompile Include="NAE_Window_Input.c" />
     <ClCompile Include="Window.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="NAE_Error_log.h" />
     <ClInclude Include="NAE_Frame_Rate.h" />
     <ClInclude Include="NAE_Init.h" />
+    <ClInclude Include="NAE_Keyboard_Input.h" />
+    <ClInclude Include="NAE_Object.h" />
+    <ClInclude Include="NAE_Window_Input.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
