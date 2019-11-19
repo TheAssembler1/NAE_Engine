@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdbool.h>
-#include "SDL.h"
+#include <SDL.h>
 
 /*function creates the main window of the engine*/
 SDL_Window* NAE_Init_Window() {
