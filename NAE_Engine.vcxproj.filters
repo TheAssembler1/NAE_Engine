@@ -14,92 +14,68 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
     <Filter Include="Source Files\Engine">
-      <UniqueIdentifier>{185b352d-45b0-40db-ab23-a79f0f1059fb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Engine\Display">
-      <UniqueIdentifier>{572f9703-d671-4db2-8dfa-245ea6a33e1c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Engine\System">
-      <UniqueIdentifier>{fa12992e-bd27-4dd6-aad3-598ae9dc674f}</UniqueIdentifier>
+      <UniqueIdentifier>{53324f30-2a5e-4377-8d5e-c80f86700cfd}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\User">
-      <UniqueIdentifier>{8f516ad4-bf3a-49a2-9171-8e1438898371}</UniqueIdentifier>
+      <UniqueIdentifier>{c38c020a-c6b5-4af7-a0e8-8ffcb807397b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Engine">
-      <UniqueIdentifier>{4997009f-4c1f-4ae3-b28f-0df10812acee}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Engine\Display">
-      <UniqueIdentifier>{38263be1-cec9-4fd0-a135-826643b5bd53}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Engine\System">
-      <UniqueIdentifier>{308ad919-883d-463a-828b-40b14ba02863}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\User">
-      <UniqueIdentifier>{bd6ac416-7137-4f44-8d98-0b0f75fd2ee9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Engine\Input">
-      <UniqueIdentifier>{e48047f9-7313-4e60-a62b-d6ae9acc4fd9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Engine\Input">
-      <UniqueIdentifier>{126fbedf-2d60-4d08-9c5e-5208df720070}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Engine\Game">
-      <UniqueIdentifier>{eb79f3ce-6fb5-48e9-b237-2152d897b748}</UniqueIdentifier>
+    <Filter Include="Source Files\Engine\Display">
+      <UniqueIdentifier>{f5aa978d-0356-4561-bb2c-7805bf6fbf50}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Engine\Game">
-      <UniqueIdentifier>{5320f680-7f75-4c68-be73-44f1bbbd1978}</UniqueIdentifier>
+      <UniqueIdentifier>{c519e790-e1f3-4bd1-8436-c603355749ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\Input">
+      <UniqueIdentifier>{903e1338-7146-4410-94c7-a0c47b080dd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Engine\System">
+      <UniqueIdentifier>{9a272cb7-98b8-4596-993a-f70201bd95c4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.c">
-      <Filter>Source Files\User</Filter>
+    <ClCompile Include="Source Files\Engine\Game\NAE_Object.c">
+      <Filter>Source Files\Engine\Game</Filter>
     </ClCompile>
-    <ClCompile Include="Window.c">
-      <Filter>Source Files\User</Filter>
+    <ClCompile Include="Source Files\Engine\Input\NAE_Keyboard_Input.c">
+      <Filter>Source Files\Engine\Input</Filter>
     </ClCompile>
-    <ClCompile Include="NAE_Error_Log.c">
+    <ClCompile Include="Source Files\Engine\Input\NAE_Window_Input.c">
+      <Filter>Source Files\Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source Files\Engine\System\NAE_Error_Log.c">
       <Filter>Source Files\Engine\System</Filter>
     </ClCompile>
-    <ClCompile Include="NAE_Init.c">
+    <ClCompile Include="Source Files\Engine\System\NAE_Init.c">
       <Filter>Source Files\Engine\System</Filter>
     </ClCompile>
-    <ClCompile Include="NAE_Core.c">
+    <ClCompile Include="Source Files\Engine\NAE_Core.c">
       <Filter>Source Files\Engine</Filter>
     </ClCompile>
-    <ClCompile Include="NAE_Keyboard_Input.c">
-      <Filter>Source Files\Engine\Input</Filter>
+    <ClCompile Include="Source Files\User\Main.c">
+      <Filter>Source Files\User</Filter>
     </ClCompile>
-    <ClCompile Include="NAE_Frame_Rate.c">
-      <Filter>Source Files\Engine\Display</Filter>
-    </ClCompile>
-    <ClCompile Include="NAE_Window_Input.c">
-      <Filter>Source Files\Engine\Input</Filter>
-    </ClCompile>
-    <ClCompile Include="NAE_Object.c">
-      <Filter>Source Files\Engine\Game</Filter>
+    <ClCompile Include="Source Files\User\Window.c">
+      <Filter>Source Files\User</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Window.h">
-      <Filter>Header Files\User</Filter>
+    <ClInclude Include="Header Files\Engine\Display\NAE_Frame_Rate.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NAE_Error_log.h">
-      <Filter>Header Files\Engine\System</Filter>
+    <ClInclude Include="Header Files\Engine\Game\NAE_Object.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NAE_Init.h">
-      <Filter>Header Files\Engine\System</Filter>
+    <ClInclude Include="Header Files\Engine\Input\NAE_Keyboard_Input.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NAE_Frame_Rate.h">
-      <Filter>Header Files\Engine\Display</Filter>
+    <ClInclude Include="Header Files\Engine\Input\NAE_Window_Input.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NAE_Keyboard_Input.h">
-      <Filter>Header Files\Engine\Input</Filter>
+    <ClInclude Include="Header Files\Engine\System\NAE_Error_log.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="NAE_Window_Input.h">
-      <Filter>Header Files\Engine\Input</Filter>
-    </ClInclude>
-    <ClInclude Include="NAE_Object.h">
-      <Filter>Header Files\Engine\Game</Filter>
+    <ClInclude Include="Header Files\Engine\System\NAE_Init.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

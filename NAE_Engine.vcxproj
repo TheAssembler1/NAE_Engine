@@ -19,24 +19,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="NAE_Error_Log.c" />
-    <ClCompile Include="NAE_Core.c" />
-    <ClCompile Include="Main.c" />
-    <ClCompile Include="NAE_Frame_Rate.c" />
-    <ClCompile Include="NAE_Init.c" />
-    <ClCompile Include="NAE_Keyboard_Input.c" />
-    <ClCompile Include="NAE_Object.c" />
-    <ClCompile Include="NAE_Window_Input.c" />
-    <ClCompile Include="Window.c" />
+    <ClCompile Include="Source Files\Engine\Game\NAE_Object.c" />
+    <ClCompile Include="Source Files\Engine\Input\NAE_Keyboard_Input.c" />
+    <ClCompile Include="Source Files\Engine\Input\NAE_Window_Input.c" />
+    <ClCompile Include="Source Files\Engine\NAE_Core.c" />
+    <ClCompile Include="Source Files\Engine\System\NAE_Error_Log.c" />
+    <ClCompile Include="Source Files\Engine\System\NAE_Init.c" />
+    <ClCompile Include="Source Files\User\Main.c" />
+    <ClCompile Include="Source Files\User\Window.c" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="NAE_Error_log.h" />
-    <ClInclude Include="NAE_Frame_Rate.h" />
-    <ClInclude Include="NAE_Init.h" />
-    <ClInclude Include="NAE_Keyboard_Input.h" />
-    <ClInclude Include="NAE_Object.h" />
-    <ClInclude Include="NAE_Window_Input.h" />
-    <ClInclude Include="Window.h" />
+    <ClInclude Include="Header Files\Engine\Display\NAE_Frame_Rate.h" />
+    <ClInclude Include="Header Files\Engine\Game\NAE_Object.h" />
+    <ClInclude Include="Header Files\Engine\Input\NAE_Keyboard_Input.h" />
+    <ClInclude Include="Header Files\Engine\Input\NAE_Window_Input.h" />
+    <ClInclude Include="Header Files\Engine\System\NAE_Error_log.h" />
+    <ClInclude Include="Header Files\Engine\System\NAE_Init.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -95,7 +93,12 @@
     <Import Project="NAE_Engne.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -116,6 +119,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,6 +151,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
