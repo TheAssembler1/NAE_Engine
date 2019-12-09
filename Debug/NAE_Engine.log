@@ -1,8 +1,0 @@
-﻿C:\Users\noah\Documents\GitHub\NAE_Engine\NAE_Engine.vcxproj(80,5): warning MSB4011: "C:\Users\noah\Documents\GitHub\NAE_Engine\NAE_Engine.props" cannot be imported again. It was already imported at "C:\Users\noah\Documents\GitHub\NAE_Engine\NAE_Engine.vcxproj (79,5)". This is most likely a build authoring error. This subsequent import will be ignored. 
-  NAE_Core.c
-C:\Users\noah\Documents\GitHub\NAE_Engine\Source Files\Engine\NAE_Core.c(31,20): warning C4013: 'NAE_Window_Input' undefined; assuming extern returning int
-  Main.c
-  Window.c
-  Generating Code...
-C:\Users\noah\Documents\GitHub\NAE_Engine\Source Files\Engine\NAE_Core.c(34,22): warning C4013: 'NAE_KeyBoard_Input' undefined; assuming extern returning int
-  NAE_Engine.vcxproj -> C:\Users\noah\Documents\GitHub\NAE_Engine\Debug\NAE_Engine.exe
