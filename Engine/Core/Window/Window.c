@@ -7,7 +7,7 @@ SDL_Window* Window_Init(){
     }
     else{
         SDL_Window* window = SDL_CreateWindow("TESTING", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 500, 500, SDL_WINDOW_SHOWN);
-        if(window = NULL){
+        if(window == NULL){
             printf("ERROR:WINDOW NULL::%s", SDL_GetError());
             SDL_Quit();
             exit(0);
@@ -22,6 +22,7 @@ SDL_Renderer* Render_Init(SDL_Window* window){
     SDL_Renderer* render = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
     if(render == NULL){
         printf("ERROR:RENDER NULL::%s", SDL_GetError());
+        SDL_DestroyWindow(window);
         SDL_Quit();
         exit(0);
     }
