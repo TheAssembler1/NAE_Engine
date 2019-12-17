@@ -6,15 +6,13 @@ SDL_Window* Window_Init(){
         exit(0);
     }
     else{
-        SDL_Window* window = SDL_CreateWindow("TESTING", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 500, 500, SDL_WINDOW_SHOWN);
+        SDL_Window* window = SDL_CreateWindow("TESTING", WINDOW_X, WINDOW_Y, WINDOW_WIDTH, WINDOW_HEIGHT, SDL_WINDOW_SHOWN);
         if(window == NULL){
             printf("ERROR:WINDOW NULL::%s", SDL_GetError());
             SDL_Quit();
             exit(0);
         }
-        else{
-            return window;
-        }
+        return window;
     }
 }
 
@@ -26,7 +24,5 @@ SDL_Renderer* Render_Init(SDL_Window* window){
         SDL_Quit();
         exit(0);
     }
-    else{
-        return render;
-    }
+    return render;
 }   
