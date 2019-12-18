@@ -18,11 +18,10 @@ int Timer_Get_Ticks(Timer* timer){
 	int time = 0;
 	if(timer->timer_started){
 		if(timer->timer_paused)
-			time = timer->timer_paused_ticks;
+			return timer->timer_paused_ticks;
 		else
-			time = SDL_GetTicks() - timer->timer_start_ticks;
+			return SDL_GetTicks() - timer->timer_start_ticks;
 	}
-	return time;
 }
 
 void Timer_Part_One(float* avg_fps, int counted_frames, Timer fps_timer){
