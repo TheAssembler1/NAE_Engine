@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "string_log.h": "c"
+        "string_log.h": "c",
+        "objects.h": "c"
     }
 }
