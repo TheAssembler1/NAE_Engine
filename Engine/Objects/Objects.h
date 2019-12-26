@@ -1,10 +1,10 @@
 #ifndef OBJECTS_H
-#define OBJECTS_h
+#define OBJECTS_H
 #include <SDL2/SDL.h>
 
-typedef struct RectObject{
+typedef struct Object{
 
-    struct RectObject* next;
+    struct Object* next;
 
     int x; int y;
     int width; int height;
@@ -12,14 +12,19 @@ typedef struct RectObject{
     int collision_layer; int render_layer;
 
     void (*Render) (SDL_Renderer* render);
-    void (*Logic) (struct RectObject* object);
+    void (*Logic) (struct Object* object);
 
-    struct RectObject* prev;
+    struct Object* prev;
 
-}RectObject;
+}Object;
 
-void Init_Rect_Object(RectObject object, void Render(SDL_Renderer* render), void Logic(RectObject* object));
+//FIXME::THINK DO WE NEED A POINTER TO THE RECT OBJECT OR NAH
+void Init_Object(Object* object, void Render(SDL_Renderer* render), void Logic(Object* object));
 void Render_Rect_Object();
 void Unrender_Rect_Object();
+void Destroy_Rect_Object(Object* object);
+
+void Camera_Logic();
+void Camera_Render();
 
 #endif
